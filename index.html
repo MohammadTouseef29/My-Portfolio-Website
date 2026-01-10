@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="theme-color" content="#0f1724" />
+        <title>Touseef Banu — Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Background animation -->
+       <div class="bg-anim" aria-hidden="true">
+            <!-- top area -->
+            <span style="top:8%;  left:5%;  width:16px; height:16px; animation: floatDiagonal 18s infinite;"></span>
+            <span style="top:12%; left:14%; width:22px; height:22px; animation: floatUp 24s infinite;"></span>
+            <span style="top:18%; left:22%; width:14px; height:14px; animation: floatSide 20s infinite;"></span>
+
+            <!-- upper-mid -->
+            <span style="top:28%; left:8%;  width:26px; height:26px; animation: floatUp 26s infinite;"></span>
+            <span style="top:32%; left:18%; width:18px; height:18px; animation: floatDiagonal 19s infinite;"></span>
+            <span class="square" style="top:35%; left:28%; width:20px; height:20px; animation: floatSide 22s infinite;"></span>
+
+            <!-- center -->
+            <span style="top:45%; left:6%;  width:30px; height:30px; animation: floatSide 28s infinite;"></span>
+            <span style="top:48%; left:16%; width:16px; height:16px; animation: floatUp 21s infinite;"></span>
+            <span style="top:52%; left:26%; width:24px; height:24px; animation: floatDiagonal 25s infinite;"></span>
+
+            <!-- center-right -->
+            <span class="square" style="top:40%; left:46%; width:22px; height:22px; animation: floatDiagonal 23s infinite;"></span>
+            <span style="top:50%; left:54%; width:28px; height:28px; animation: floatUp 30s infinite;"></span>
+            <span style="top:58%; left:62%; width:18px; height:18px; animation: floatSide 20s infinite;"></span>
+
+            <!-- lower -->
+            <span style="bottom:30%; left:10%; width:20px; height:20px; animation: floatUp 22s infinite;"></span>
+            <span style="bottom:24%; left:22%; width:26px; height:26px; animation: floatDiagonal 27s infinite;"></span>
+            <span class="square" style="bottom:20%; left:34%; width:18px; height:18px; animation: floatSide 19s infinite;"></span>
+
+            <!-- bottom-right -->
+            <span style="bottom:18%; left:56%; width:14px; height:14px; animation: floatUp 17s infinite;"></span>
+            <span style="bottom:12%; left:68%; width:22px; height:22px; animation: floatDiagonal 21s infinite;"></span>
+            <span style="bottom:8%;  left:80%; width:30px; height:30px; animation: floatSide 32s infinite;"></span>
+
+            <!-- far right -->
+            <span style="top:20%; left:88%; width:16px; height:16px; animation: floatDiagonal 18s infinite;"></span>
+            <span class="square" style="top:38%; left:92%; width:20px; height:20px; animation: floatUp 24s infinite;"></span>
+            <span style="bottom:22%; left:90%; width:26px; height:26px; animation: floatSide 29s infinite;"></span>
+
+            <!-- lower-mid -->
+            <span style="top:62%; left:6%;  width:18px; height:18px; animation: floatUp 22s infinite;"></span>
+            <span style="top:66%; left:14%; width:26px; height:26px; animation: floatDiagonal 28s infinite;"></span>
+            <span class="square" style="top:70%; left:22%; width:20px; height:20px; animation: floatSide 24s infinite;"></span>
+
+            <!-- lower center -->
+            <span style="top:72%; left:34%; width:30px; height:30px; animation: floatUp 32s infinite;"></span>
+            <span style="top:76%; left:42%; width:16px; height:16px; animation: floatDiagonal 19s infinite;"></span>
+            <span class="square" style="top:80%; left:50%; width:22px; height:22px; animation: floatSide 26s infinite;"></span>
+
+            <!-- lower-right -->
+            <span style="top:68%; left:62%; width:18px; height:18px; animation: floatUp 21s infinite;"></span>
+            <span style="top:74%; left:70%; width:26px; height:26px; animation: floatDiagonal 30s infinite;"></span>
+            <span class="square" style="top:78%; left:78%; width:20px; height:20px; animation: floatSide 23s infinite;"></span>
+
+            <!-- bottom zone -->
+            <span style="bottom:18%; left:8%;  width:14px; height:14px; animation: floatUp 18s infinite;"></span>
+            <span style="bottom:14%; left:18%; width:22px; height:22px; animation: floatDiagonal 25s infinite;"></span>
+            <span class="square" style="bottom:10%; left:30%; width:18px; height:18px; animation: floatSide 20s infinite;"></span>
+
+            <span style="bottom:16%; left:52%; width:28px; height:28px; animation: floatUp 34s infinite;"></span>
+            <span style="bottom:12%; left:64%; width:16px; height:16px; animation: floatDiagonal 17s infinite;"></span>
+            <span class="square" style="bottom:8%; left:76%; width:24px; height:24px; animation: floatSide 29s infinite;"></span>
+
+            <span style="bottom:20%; left:88%; width:20px; height:20px; animation: floatUp 24s infinite;"></span>
+            <span style="bottom:14%; left:92%; width:14px; height:14px; animation: floatDiagonal 19s infinite;"></span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav">
+            <div class="nav-inner">
+                <div class="nav-left">
+                    <a href="#" class="brand">
+                        <img
+                        src="assets/profile.jpeg"
+                        alt="Portrait of Touseef Banu"
+                        class="profile-pic"
+                        />
+                    </a>
+                    <div class="brand-name">Touseef</div>
+                </div>
+
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="hero-left">
+                    <h1 class="name">
+                        <span>Hi, I'm Mohammad</span>
+                        <span class="big-name"> Touseef Banu</span>
+                        <span aria-hidden="true">👋</span>
+                    </h1>
+
+                    <p class="lead">
+                        Data Scientist | AI Developer | Tech Enthusiast | Chief Coordinator at Computer Society of India, MJCET
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn primary">
+                            <span aria-hidden="true">🔎</span> Explore projects
+                        </a>
+                        <a href="#contact" class="btn">
+                            <span aria-hidden="true">✉️</span> Contact me
+                        </a>
+                        <a
+                        href="assets/Resume - Dec'25.pdf"
+                        class="btn outline"
+                        download
+                        >
+                            <span aria-hidden="true">📄</span> Resume
+                        </a>
+                    </div>
+                </div>
+
+                <aside class="hero-right card-like">
+                    <p>
+                        Final-year Computer Science Engineering student with a strong interest in AI, Machine Learning, and Data Science. A tech enthusiast and fast learner who enjoys solving real-world problems through technology. Experienced in leadership, coordination, and team management through active involvement in technical communities. I combine academic knowledge with hands-on experience in AI, web development, and startup ecosystems.
+                    </p>
+
+                    <div class="education">
+                        <h5>Education</h5>
+                        <h6><strong>BE in Computer Science And Engineering</strong></h6>
+                        <p>Muffakham Jah College of Engineering and Technology 2022 - 26</p>
+                        <p>Final year</p>
+                    </div>
+                </aside>
+            </section>
+
+            <!-- About -->
+            <section id="about" class="section about-full">
+                <h2>About me</h2>
+                <div class="card">
+                    <p>
+                        I am a final-year Computer Science Engineering student with a strong focus on Artificial Intelligence, Machine Learning, and Data Science, driven by the goal of building data-driven solutions to real-world problems. I enjoy working end-to-end — from understanding problem statements and analyzing data to designing intelligent systems and extracting actionable insights. <br> <br>
+                        My hands-on experience includes building AI and analytics-driven platforms that combine machine learning, NLP, SQL, and data engineering concepts to solve challenges in education, career intelligence, and business analytics. I place strong emphasis on practical implementation, clean data pipelines, and explainable results, rather than purely theoretical approaches. <br> <br>
+                        Beyond academics, I actively contribute to the tech community as the Chief Coordinator of the Computer Society of India (CSI) student chapter at MJCET, where I lead teams, organize technical initiatives, and collaborate with peers to foster a strong learning and innovation culture. These experiences have strengthened my leadership, communication, and project management skills alongside my technical growth. <br> <br>
+                        In the long term, I aspire to become a startup founder, building impactful products that leverage AI and data to address meaningful challenges at scale. I am currently seeking entry-level roles or internships (PPO-oriented) in Data Science, Machine Learning, or AI, where I can learn rapidly, contribute effectively, and grow as a data professional.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="section">
+                <h2>Skills</h2>
+                <ul class="skills">
+                    <li>Python Programming Language</li>
+                    <li>Data Science</li>
+                    <li>SQL</li>
+                    <li>Intermediate Machine Learning</li>
+                    <li>NLP & RAG Systems</li>
+                    <li>Basic Deep Learning &amp; Neural Networks</li>
+                    <li>Data Visualization</li>
+                    <li>Data Analysis & EDA</li>
+                </ul>
+            </section>
+
+            <!-- Projects -->
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+
+                    <article class="project-card clickable" 
+                        data-title="Skill Sphere"
+                        data-desc="Designed an end-to-end AI and data-driven career intelligence system to analyze user profiles, identify skill gaps, predict employability, and recommend personalized career paths based on job market trends. Implemented NLP-based resume parsing, ML-driven skill gap analysis, role recommendation pipelines, employability scoring, and analytics modules for career risk, role saturation, and skill transferability, with explainable insights from a recruiter's perspective."
+                        data-link=""
+                        data-tech="Python,Machine Learning,NLP (Resume Parsing),SQL,Pandas & NumPy,Embeddings & Similarity Models,Analytics & Feature Engineering,LLM APIs">
+
+                        <h3>Skill Sphere</h3>
+                        <h5>AI-Driven Career & Skill Intelligence Platform</h5>
+
+                        <p style="text-align: justify;">
+                            Designed an end-to-end AI and data-driven career intelligence system to analyze user profiles, identify skill gaps, predict employability, and recommend personalized career paths based on job market trends. Implemented NLP-based resume parsing, ML-driven skill gap analysis, role recommendation pipelines, employability scoring, and analytics modules for career risk, role saturation, and skill transferability, with explainable insights from a recruiter's perspective.
+                            <br><br>
+                        </p>
+
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Machine Learning</span>
+                            <span class="tech">NLP (Resume Parsing)</span>
+                            <span class="tech">SQL</span>
+                            <span class="tech">Pandas & NumPy</span>
+                            <span class="tech">Embeddings & Similarity Models</span>
+                            <span class="tech">Analytics & Feature Engineering</span>
+                            <span class="tech">LLM APIs</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card clickable" 
+                        data-title="Study Ginie"
+                        data-desc="Designed and developed an end-to-end AI-powered EdTech system integrating data science, machine learning, and NLP to enhance classroom learning and academic insights. Built ML pipelines for automated attendance, student performance analytics, and academic risk prediction using engagement, assessment, and attendance data. Implemented a RAG-based doubt-solving system, lecture transcription, summarization, flashcard and quiz generation, and analytics dashboards to identify learning gaps, topic difficulty, and personalized improvement recommendations for students and instructors."
+                        data-link=""
+                        data-tech="Python,Machine Learning,NLP & RAG (FAISS, Embeddings),Whisper / Speech-to-Text,Computer Vision,Pandas & NumPy,SQL,Streamlit">
+
+                        <h3>Study Ginie</h3>
+                        <h5>AI-Driven Classroom Intelligence Platform</h5>
+
+                        <p style="text-align: justify;">
+                            Designed and developed an end-to-end AI-powered EdTech system integrating data science, machine learning, and NLP to enhance classroom learning and academic insights. Built ML pipelines for automated attendance, student performance analytics, and academic risk prediction using engagement, assessment, and attendance data. Implemented a RAG-based doubt-solving system, lecture transcription, summarization, flashcard and quiz generation, and analytics dashboards to identify learning gaps, topic difficulty, and personalized improvement recommendations for students and instructors.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">Machine Learning</span>
+                            <span class="tech">NLP & RAG (FAISS, Embeddings)</span>
+                            <span class="tech">Whisper / Speech-to-Text</span>
+                            <span class="tech">Computer Vision</span>
+                            <span class="tech">Pandas & NumPy</span>
+                            <span class="tech">SQL</span>
+                            <span class="tech">Streamlit</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card clickable" 
+                        data-title="Insight Ledger"
+                        data-desc="Designed and implemented a SQL-first enterprise analytics platform with a well-modeled data warehouse using star and snowflake schemas to centralize transactional data. Built advanced SQL pipelines for KPI computation (MRR, churn, ARPU, LTV), cohort and funnel analysis, historical tracking using Slowly Changing Dimensions, and performance-optimized queries. Extended the system with forecasting, multi-dimensional drill-down analytics, data quality validation, KPI lineage, and scenario-based what-if analysis to deliver fast, reliable, and explainable business insights."
+                        data-link=""
+                        data-tech="SQL (Advanced Queries),Data Warehousing,Star & Snowflake Schema,Window Functions & CTEs,KPI Modeling,Cohort & Funnel Analysis,Query Optimization,Business Intelligence">
+
+                        <h3>Insight Ledger</h3>
+                        <h5>Enterprise-Scale Business Intelligence & SQL Analytics Platform</h5>
+
+                        <p style="text-align: justify;">
+                            Designed and implemented a SQL-first enterprise analytics platform with a well-modeled data warehouse using star and snowflake schemas to centralize transactional data. Built advanced SQL pipelines for KPI computation (MRR, churn, ARPU, LTV), cohort and funnel analysis, historical tracking using Slowly Changing Dimensions, and performance-optimized queries. Extended the system with forecasting, multi-dimensional drill-down analytics, data quality validation, KPI lineage, and scenario-based what-if analysis to deliver fast, reliable, and explainable business insights.
+                        </p>
+
+                        <div class="tech-stack">
+                            <span class="tech">SQL (Advanced Queries)</span>
+                            <span class="tech">Data Warehousing</span>
+                            <span class="tech">Star & Snowflake Schema</span>
+                            <span class="tech">Window Functions & CTEs</span>
+                            <span class="tech">KPI Modeling</span>
+                            <span class="tech">Cohort & Funnel Analysis</span>
+                            <span class="tech">Query Optimization</span>
+                            <span class="tech">Business Intelligence</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card clickable" 
+                        data-title="MediReach"
+                        data-desc="Developed MediReach, a Flutter + Node.js platform that lets citizens and health workers report geo-tagged medical issues using text or voice, enabling real-time visibility of rural healthcare needs.
+                        Built an actionable dashboard for NGOs/hospitals with categorized issues, heatmaps, and response workflows, improving the speed and accuracy of medical outreach and service delivery."
+                        data-link=""
+                        data-tech="Flutter,Dart,Node JS,Express JS,Mongo DB">
+
+                        <h3>Medi Reach</h3>
+                        <h5>A Citizen-to-Healthcare Reporting & Response Platform</h5>
+
+                        <p style="text-align: justify;">
+                            Developed MediReach, a Flutter + Node.js platform that lets citizens and health workers report geo-tagged medical issues using text or voice, enabling real-time visibility of rural healthcare needs. <br>
+                            Built an actionable dashboard for NGOs/hospitals with categorized issues, heatmaps, and response workflows, improving the speed and accuracy of medical outreach and service delivery.
+                            <br><br><br><br>
+                        </p>
+
+                        <div class="tech-stack">
+                            <span class="tech">Flutter</span>
+                            <span class="tech">Dart</span>
+                            <span class="tech">Node JS</span>
+                            <span class="tech">Express JS</span>
+                            <span class="tech">Mongo DB</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                <div class="projects-grid experiences">
+                    <article class="project-card">
+                        <h3>AI & Data Science Project Developer</h3>
+                        <h5>Self-Directed | Academic & Independent Projects</h5>
+                        <p>
+                            Designed and built end-to-end AI, machine learning, and SQL-based analytics systems, focusing on real-world problem solving, data pipelines, and explainable insights. Worked across NLP, predictive modeling, and enterprise analytics, translating complex data into actionable intelligence.
+                        </p>
+                    </article>
+
+                    <article class="project-card">
+                        <h3>Chief Coordinator - Computer Society of India (CSI)</h3>
+                        <h5>MJCET Student Chapter</h5>
+                        <p>
+                            Led cross-functional student teams to organize technical events, workshops, and initiatives, fostering peer learning and collaboration. Coordinated planning, execution, and communication while bridging students with industry-oriented technical exposure.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Certifications -->
+            <section id="certs" class="section">
+                <h2>Certifications & Achievements</h2>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <h3>The Ultimate Job-Ready Data Science Program</h3>
+                        <p class="muted">
+                            Comprehensive hands-on program covering Python for data science, data analysis with Pandas and NumPy, data visualization, SQL for analytics, statistics, and machine learning using Scikit-learn. Gained practical experience through real-world projects, including ML workflows, data preprocessing, RAG-based AI systems, and industry-standard development tools.
+                        </p>
+                    </div>
+
+                    <div class="cert-card light">
+                        <h3>Chief Coordinator - CSI Student Chapter</h3>
+                        <p class="muted">
+                            Led technical initiatives, organized workshops and events, and coordinated student teams to promote peer learning and industry-oriented skill development.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="section">
+                <div class="contact-grid">
+                    <div class="contact-left">
+                        <h2>Contact</h2>
+                        <p class="lead">
+                            I'm open to internships, freelance opportunities, and
+                            collaborations.
+                        </p>
+                        <p>touseefbanu29@gmail.com</p>
+                        <p>+91 99895 98636</p>
+
+                        <div class="contact-buttons">
+                            <a class="chip" href="https://www.linkedin.com/in/touseefbanu29" target="_blank">LinkedIn</a>
+                            <a class="chip" href="https://github.com/Mohammadtouseef29" target="_blank">GitHub</a>
+                            <a class="chip" href="#" target="_blank">Portfolio</a>
+                            <a class="chip" href="https://instagram.com/alabanza__" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-right card">
+                        <form class="contact-form" action="https://formspree.io/f/xykzzbdv" method="POST" id="contact-form">
+                            <input type="text" name="name" placeholder="Your name" aria-label="Your name" required/>
+                            <input type="email" name="email" placeholder="Enter Your Gmail" aria-label="Your email" required/>
+                            <textarea name="message" rows="4" placeholder="Write your message..." aria-label="Message" required></textarea>
+                            <button class="btn primary" type="submit" style="font-size:large;"><strong>Send email</strong></button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-inner">
+                <div class="footer-left">© 2025 M. Touseef Banu</div>
+
+                <div class="footer-right">
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <a href="#">Home</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+
+                        <a
+                        href="https://instagram.com/alabanza__"
+                        class="social"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="18"
+                                height="18"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <rect x="3" y="3" width="18" height="18" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <div class="project-modal" id="projectModal">
+            <div class="modal-card">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+
+                <div class="tech-stack" id="modalTech"></div>
+
+                <div class="modal-actions">
+                    <a id="modalLink" class="btn primary" target="_blank">Open Link</a>
+                    <button class="btn outline" id="closeModal">Close</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
